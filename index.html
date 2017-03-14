@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Cheetah</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-markdown data-background-color="#ff0000" data-background-image="/images/cheetah.jpg" >
+						# Cheetah
+					</section>
+					<section data-markdown>
+						![cheetah](/images/cheetah.baby.jpg)
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Who a new tool?
+					</section>
+					<section data-background-image="https://data.luxola.com/images/spider_banner.png">
+
+					</section>
+					<section data-markdown>
+						### Spider
+
+						- Pushing CRM segments to vendors
+						- Applications:
+						  * (re)targeting
+						  * outside the website
+					</section>
+					<section data-markdown>
+						### Not real-time
+
+						- Updates once a while
+						- Heavy data flows
+						- Slow
+
+					</section>
+					<section data-markdown>
+						### Use case: personalisation
+
+						A customer comes on the website
+						
+						- What's her loyalty status?
+						- What's her beauty tribe?
+						- Etc.
+					</section>
+					<section data-markdown>
+						### First assemption
+						#### Let's push this data from the backend!
+
+						- Takes a lot of resources
+						  * Calculated segments
+						- What about non-digital customers?
+					</section>
+					<section data-markdown>
+						### Second assemption
+						#### Let's create a new target on Spider
+
+						- Spider moves huge datasets from a source to a target
+						- Not optimized for querying a single customer
+						- No public / private endpoint
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## We need a new animal!
+					</section>
+					<section data-markdown>
+						## 4 landing customers types
+
+						1. Logged in
+						2. From an email, digital customer
+						3. From an email, retail only customer
+						4. The other ones!
+
+						*Let's forget the 4. for a while!!*
+					</section>
+					<section data-markdown>
+						## Idea
+
+						When a customer lands
+						- Send the card number to Cheetah
+						- Cheetah sends the CRM data
+						- Store the data into a cookie
+					</section>
+					<section data-markdown>
+						## Cookies
+
+						![cookie](/images/cookie.png)
+					</section>
+					<section>
+						<img src="https://data.luxola.com/images/cheetah.002.jpeg" alt="" style="width: 500px;">
+					</section>
+
+					<section data-markdown>
+						# Demo
+					</section>
+					
+				</section>
+				<section>
+					<section data-markdown>
+						## Applications
+					</section>
+					<section data-markdown>
+						### Personalisation of the banners
+
+						- DY
+						- Our own popups
+					</section>
+					<section data-markdown>
+						### Cart / Session abandonment
+						
+						- Ematic
+					</section>
+					<section data-markdown>
+						### Push notifications
+					</section>
+					<section data-markdown>
+						### Sort algorithm
+					</section>
+
+				</section>
+				<section>
+					<section data-markdown>
+						# End
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
